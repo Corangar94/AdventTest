@@ -1,0 +1,56 @@
+============================
+INTERACTIVE SHAPE DEMO - SETUP GUIDE
+============================
+
+Follow these steps to get the interactive shape demo working in your scene:
+
+1. OPEN THE SAMPLE SCENE:
+   - Navigate to Assets/Scenes/SampleScene.unity and open it
+
+2. ADD THE SCENE INITIALIZER:
+   - Create an empty GameObject in the scene (Right-click in Hierarchy > Create Empty)
+   - Rename it to "SceneInitializer"
+   - Add the SceneInitializer component (Add Component > Scripts > SceneInitializer)
+
+3. THAT'S IT!
+   - Press Play and the demo will initialize automatically
+   - All components will be created at runtime
+   - The shape will appear in the center of the screen
+   - A menu system will appear at the bottom
+
+============================
+CUSTOMIZATION OPTIONS
+============================
+
+If you want to customize the demo, you can manually add the core components:
+
+1. MANUALLY ADD GAMEMANAGER:
+   - Create an empty GameObject and name it "GameManager"
+   - Add the GameManager component to it
+   - Now you can assign references in the inspector:
+     * ShapeManager
+     * MenuController
+     * InputController
+     * AudioManager
+     * InstructionsPanel
+
+2. CUSTOMIZE SHAPES:
+   - Create prefabs for your shapes and assign them to the ShapeManager
+   - Adjust the size/radius parameters in the shape components
+
+3. CUSTOMIZE UI:
+   - Modify the MenuController and InstructionsPanel components
+   - Change button colors, text, and layout
+
+============================
+TROUBLESHOOTING
+============================
+
+If you encounter issues:
+
+1. Check that TextMeshPro is imported (Window > Package Manager > TextMeshPro)
+2. Make sure the scene has a camera with the "MainCamera" tag
+3. If the shape is not visible, check the camera's position and zoom level
+4. Ensure your platform is supported by the Unity input system
+
+For more information, see the README.md file in the project root. 
